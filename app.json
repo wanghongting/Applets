@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cai/cai",
+    
+    "pages/music/music",
+    "pages/indXing/indXing",
+    "pages/logs/logs",
+    "pages/addX/addX",
+    "pages/addX2/addX2",
+    "pages/musicXiang/musicXiang",
+    "pages/caiAdd/caiAdd"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

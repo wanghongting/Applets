@@ -1,0 +1,48 @@
+/* pages/cai/cai.wxss */
+.cai{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: "#f2d3a5"
+}
+.header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 25rpx;
+  border-bottom: 5rpx solid black;
+  font-size: 36rpx;
+  font-weight: 900;
+}
+.header>view{
+  flex: 1;
+}
+.add{
+  height: auto;
+  padding: 15rpx 20rpx;
+  border-radius: 45rpx;
+  position: absolute;
+  bottom: 50rpx;
+  left: 38%;
+  border: 1px solid black;
+  font-weight: 900;
+  font-size: 32rpx;
+}
+.main{
+  flex: 1;
+}
+.ms{
+  text-align: center;
+  color: rgb(44, 43, 43);
+  line-height: 500rpx;
+  font-weight: 900;
+}
+.back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}

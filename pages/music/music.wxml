@@ -1,0 +1,42 @@
+<!--pages/music/music.wxml-->
+<view class='music'>
+  <view class='header'>
+    <text bindtap='mus' class='{{ge?"red":""}}'>歌手</text>
+    <text bindtap='ser' class='{{ge?"":"red"}}'>搜索</text>
+  </view>
+  <!--切换歌手/搜索-->
+  <scroll-view wx:if="{{flag}}" class='main' scroll-y
+    bindscrolltolower="lower"
+  >
+    <view wx:for="{{arr}}"  bindtap='tap' data-item='{{item}}' class='nas'  wx:key="{{index}}" >
+      <image src='{{item.avatar_big}}' ></image>
+      <text>{{item.country}}歌手：{{item.name}}</text>
+    </view>
+  </scroll-view>
+  <view wx:else class='main'>
+  <view class='search'>
+    <icon type='search' size='20'></icon><input placeholder='搜索歌手或歌名' bindinput='inp'></input>
+  </view>
+  <scroll-view class='show'
+    scroll-y
+  >
+    <view wx:for="{{sers}}" wx:key="{{index}}">
+      <view>{{item.name}}</view>
+    </view>
+  </scroll-view>
+  </view>
+  <view class='footer'>
+  <audio
+  class='aud'
+  poster="{{poster}}"
+  name="{{name}}"
+  author="{{author}}"
+  src="{{src}}"
+  id="myAudio"
+  controls
+  loop
+>
+  <text type="primary"  bindtap="{{play?'audioPlay':'audioPause'}}" class='puse'></text>
+</audio>
+  </view>
+</view>

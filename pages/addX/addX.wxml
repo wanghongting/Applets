@@ -1,0 +1,57 @@
+<!--pages/addX/addX.wxml-->
+<view class='addX'>
+  <image src='{{src}}'></image>
+  <view>选择背景图：</view>
+  <view class='imgs'>
+    <text wx:for="{{imgs}}" wx:key="{{index}}" bindtap='huan' data-i='{{index}}' class='{{ins===index?"red":""}}'>背景{{index+1}}</text>
+  </view>
+  <view class='inp'>
+    <text>标题：</text><input bindinput='title'></input>
+  </view>
+  <view class='inp' bindtap='chiose'>
+    <text>时间：</text><input value='{{time}}'></input>
+  </view>
+  <view class='inps'>
+    <view>内容：</view>
+    <view class="conts">
+      <textarea bindinput='content'></textarea>
+    </view>
+  </view>
+  <view class='addImg'>
+    <view>添加图片：   <text class='btn' bindtap='chooseImage'>添加</text> </view>
+    <view class='phone'>
+      <view wx:for="{{arr}}">
+        <image  width="100rpx" height="100rpx" src="{{item}}"></image>
+      </view>
+    </view>
+  </view>
+
+
+  <picker-view
+    indicator-style="height: 50px;"
+    style="width: 100%; height: 300px;"
+    value="{{value}}"
+    bindchange="bindChange"
+    hidden='{{hide}}'
+    class='pic'
+  >
+  <view class='left' bindtap='cancle'>取消</view>
+  <view class='right' bindtap='shuer'>确定</view>
+    <picker-view-column >
+      <view wx:for="{{years}}" style="line-height: 50px" wx:key="{{index}}">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" style="line-height: 50px" wx:key="{{index}}">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{days}}" style="line-height: 50px" wx:key="{{index}}">{{item}}日</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{hours}}" style="line-height: 50px" wx:key="{{index}}">{{item}}时</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{mounds}}" style="line-height: 50px" wx:key="{{index}}">{{item}}分</view>
+    </picker-view-column>
+  </picker-view>
+  <button class='save' bindtap='save'>保存</button>
+</view>

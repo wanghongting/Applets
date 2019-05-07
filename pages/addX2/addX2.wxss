@@ -1,0 +1,58 @@
+/* pages/addX2/addX2.wxss */
+.addx2{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.cont{
+  width: 100%;
+  height: 100%;
+
+  flex-direction: column;
+}
+.cont>view{
+  width: 90%;
+  padding: 5%;
+  line-height: 80rpx;
+}
+.font{
+  width: 100%;
+  font-size: 32rpx;
+  line-height: 30rpx;
+}
+.imgs{
+
+  width: 100%;
+  height: 552rpx;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.yang1{
+  width: 27%;
+  height: 150rpx;
+  
+  margin: 22rpx;
+}
+.da{
+  width: 100%;
+  height: 546rpx;
+}
+.del{
+  width: 120rpx;
+  text-align: center;
+  padding: 7rpx 15rpx;
+  border: 1px solid rgb(80, 78, 78);
+  position: absolute;
+  right: 50rpx;
+  bottom: 50rpx;
+  font-size: 35rpx;
+}

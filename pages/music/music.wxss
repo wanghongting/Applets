@@ -1,0 +1,79 @@
+/* pages/music/music.wxss */
+.music{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.header{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.header>text{
+  flex: 1;
+  text-align: center;
+  padding: 25rpx 0;
+  
+}
+.red{
+  font-weight: 900;
+  color: red;
+  border-bottom: 2px solid red;
+}
+.main{
+  flex: 1;
+  overflow: auto;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.show{
+  flex: 1;
+  overflow: hidden;
+}
+.nas{
+  margin: 50rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+.nas>text{
+  position: relative;
+  top: -100rpx;
+  left: 60rpx;
+}
+.main image{
+  width: 230rpx;
+  height: 230rpx;
+}
+.footer{
+  width: 100%;
+  height: 160rpx;
+}
+#myAudio{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 20rpx;
+}
+.puse{
+  width: 160rpx;
+  height: 160rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 0;
+}
+.search{
+  width: 94%;
+  border: 1px solid #ccc;
+  padding: 20rpx;
+  display: flex;
+  margin-top: 15rpx;
+}
+.search>input{
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}

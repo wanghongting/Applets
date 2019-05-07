@@ -1,0 +1,13 @@
+<!--pages/musicXiang/musicXiang.wxml-->
+<view class='xiang'>
+  <image src='{{imgSrc}}'></image>
+  <scroll-view 
+    scroll-y
+    class='main'
+  >
+  <view wx:for="{{list}}" wx:key="{{index}}" class='lis'>
+    <text>{{index+1}}.{{item.name}}</text>
+  </view>
+  </scroll-view>
+  
+</view>

@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class='wrap'>
+ <swiper
+  autoplay
+  circular="true"
+  indicator-dots="true"
+
+  current="cur"
+ >
+    
+    <swiper-item bindtap="click" data-i="0">
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556203354783&di=8ce76042f11b47c6b19520779da7281d&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201307%2F28%2F20130728173940_kjwGk.thumb.700_0.jpeg" />
+    <text>{{imgName[0]}}</text>
+    </swiper-item>
+    <swiper-item bindtap="click" data-i="1">
+      <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=590493122,1178935420&fm=26&gp=0.jpg" />
+      <text>{{imgName[1]}}</text>
+    </swiper-item>
+<swiper-item bindtap="click" data-i="2">
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556203980075&di=42cf8b0f7f0ce75c197cd50c2e04f850&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fg%2FB%2FmA%2FvyuQrBf.jpg" />
+    <text>{{imgName[2]}}</text>
+    </swiper-item>
+    
+    <swiper-item bindtap="click" data-i="3">
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556204061563&di=2854d805b30291d16b0f693622bd5c72&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201508%2F04%2F20150804231457_xVBsR.png" />
+    <text>{{imgName[3]}}</text>
+    </swiper-item>
+</swiper>
+<button bindtap="changeIndicatorDots">indicator-dots</button>
+<button bindtap="changeAutoplay">autoplay</button>
+<slider bindchange="intervalChange" show-value min="500" max="2000" />
+<slider bindchange="durationChange" show-value min="1000" max="10000" />
+</view>

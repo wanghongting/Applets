@@ -1,0 +1,14 @@
+<!--pages/addX2/addX2.wxml-->
+<view class='addx2'>
+  <image src="{{msg.background}}" class='back'></image>
+  <view class='cont'>
+    <view class='font'>
+      {{msg.content}}
+    </view>
+    <view class='imgs'>
+      <image wx:for="{{msg.arr}}" wx:key="{{index}}" src='{{item}}' class='{{msg.arr.length>1? "yang1":"da"}}'></image>
+    </view>
+
+    <text class='del' bindtap='del'>删除</text>
+  </view>
+</view>

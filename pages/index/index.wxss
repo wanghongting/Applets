@@ -1,0 +1,26 @@
+/**index.wxss**/
+.wrap{
+  width: 100%;
+  height: 100%;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+}
+swiper-item{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+image{
+  width: 70%;
+  height: 70%;
+  margin-left: 15%;
+}
+swiper-item>text{
+  position: absolute;
+  left: 43%;
+  top: 30%;
+  z-index: 5;
+  color:#fff;
+}

@@ -1,0 +1,99 @@
+/* pages/addX/addX.wxss */
+.addX{
+  width: 100%;
+  height: 100%;
+}
+.addX>image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.addX>view{
+  padding: 15rpx 0;
+}
+.imgs{
+  width: 100%;
+  display: flex;
+  font-size: 29rpx;
+}
+.imgs>text{
+  flex: 1;
+  padding: 15rpx;
+}
+.inp{
+  width: 100%;
+  display: flex;
+}
+.inp>input{
+  flex: 1;
+  font-size: 30rpx;
+  border-bottom: 1px solid black;
+}
+.conts{
+  width: 100%;
+  height: 300rpx;
+  display: block;
+  background-image:linear-gradient(#E1E6EA .1em, transparent .1em);
+  background-size: 100% 48rpx;
+}
+.conts>textarea{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.red{
+  color: red;
+  font-weight: 900;
+}
+.pic{
+  position: absolute;
+  bottom: 7rpx;
+  background:#fff;
+}
+.left{
+  position: absolute;
+  left: 20rpx;
+  background: #fff;
+  color: red;
+  z-index: 5;
+}
+.right{
+  position: absolute;
+  right: 20rpx;
+  background: #fff;
+  color: blue;
+  z-index: 5;
+}
+.phone>view{
+  display: inline-block;
+  margin: 10rpx 20rpx;
+}
+.phone>view>image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.btn{
+  width: 100rpx;
+  height: 50rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 35rpx;
+  font-weight: 900;
+  border: 1px solid black;
+  border-radius: 5rpx;
+}
+.save{
+  width: 200rpx;
+  height: 90rpx;
+  font-size: 32rpx;
+  line-height: 90rpx;
+  background: #fff;
+  position: absolute;
+  right: 45rpx;
+  bottom: 50rpx;
+  color: red;
+}

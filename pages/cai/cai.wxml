@@ -1,0 +1,23 @@
+<!--pages/cai/cai.wxml-->
+<view class='cai'>
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557072454526&di=86bce2469a40cef660c49499ad90ccc0&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F03%2F55%2F91%2F47579d937325704.jpg' class='back'></image>
+  <view class='header'>
+    <view>
+      <view>总收入：</view>
+      <text>￥0.00</text>
+    </view>
+    <view>
+      <view>总支出：</view>
+      <text>￥0.00</text>
+    </view>
+  </view>
+  <scroll-view wx:if="{{flag}}" class='main'>
+    
+  </scroll-view>
+  <view wx:else class='main ms'>
+    暂无账单
+  </view>
+  <view class='add' bindtap='add'>
+   +添加账单
+  </view>
+</view>

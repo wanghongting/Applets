@@ -1,0 +1,10 @@
+<!--pages/indXing/indXing.wxml-->
+<scroll-view class='xiang'>
+<image class='imgs' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557047822604&di=d58e34a133ac3cae5a81200def027512&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201710%2F08%2F20171008134002_4XeG8.thumb.700_0.jpeg'></image>
+  <view class='vie' wx:for="{{list}}" wx:key="{{index}}" bindtap='element' data-i='{{index}}'>
+    <text class='name' bindtap='element' data-i='{{index}}'>标题：{{item.title}}</text>
+    <text class='time' bindtap='element' data-i='{{index}}'>时间：{{item.time}}</text>
+  </view>    
+    <text class='add' bindtap='add'>+   添加日记</text>
+  
+</scroll-view>

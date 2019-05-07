@@ -1,0 +1,37 @@
+/* pages/indXing/indXing.wxss */
+.xiang{
+  width: 100%;
+  height: 100%;
+}
+.imgs{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.add{
+  position: absolute;
+  border: 2px solid #ccc;
+  padding: 15rpx 25rpx;
+  border-radius: 25rpx;
+  bottom: 50rpx;
+  left: 35%;
+}
+.vie{
+  width: 100%;
+  padding: 10rpx 20rpx;
+  border-bottom: 2px solid rgb(75, 74, 74);
+}
+.name{
+  display: block;
+  font-size: 32rpx;
+  color: #312020;
+}
+.time{
+  position: relative;
+  left: 427rpx;
+  color: rgb(109, 107, 107);
+  font-size: 28rpx;
+}

@@ -1,0 +1,36 @@
+<!--pages/caiAdd/caiAdd.wxml-->
+<view class='container'>
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557072454526&di=86bce2469a40cef660c49499ad90ccc0&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F03%2F55%2F91%2F47579d937325704.jpg' class='back'></image>
+  <view class='header'>
+    <text bindtap='zhi' class='{{flag?"red":""}}'>支出</text>
+    <text bindtap='shou' class='{{flag?"":"red"}}'>收入</text>
+  </view>
+  <view class='money'>
+    <text class='zi'>账单金额</text><text class='num' bindtap="num">{{num === 0?"0.00":num}}</text>
+  </view>
+  <view class='icon'>
+      <view wx:for='{{ flag ?newArr:newArr2}}' wx:key='index' bindtap='icons' data-index='{{index}}'>
+      <image src='{{item.icon}}'></image>
+          <text class='{{shu===index? "sy":""}}'>{{item.name}}</text>
+      </view>
+  </view>
+  <view class='beis'>
+    <text>备注：</text>
+    <textarea bindinput='content' class='text'></textarea>
+  </view>
+  <button bindtap='save' class='save'>保存</button>
+  <view hidden='{{show}}' class='suan'>
+    <text bindtap='sure' data-number='7'>7</text>
+    <text bindtap='sure' data-number='8'>8</text>
+    <text bindtap='sure' data-number='9'>9</text>
+    <text bindtap='sure' data-number='4'>4</text>
+    <text bindtap='sure' data-number='5'>5</text>
+    <text bindtap='sure' data-number='6'>6</text>
+    <text bindtap='sure' data-number='1'>1</text>
+    <text bindtap='sure' data-number='2'>2</text>
+    <text bindtap='sure' data-number='3'>3</text>
+    <text bindtap='sure' data-number='.'>.</text>
+    <text bindtap='sure' data-number='0'>0</text>
+    <text bindtap='sure' data-number='sure'>确定</text>
+  </view>
+</view>
